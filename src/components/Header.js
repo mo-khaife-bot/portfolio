@@ -8,7 +8,10 @@ const Header = () => {
   return (
     <header className="intro">
       <div className="intro-container">
-        <h1 className="intro-title-name">Soo Dhawoow &nbsp;✌🏾</h1>
+        <div className="typed-container">
+          <h1 className="intro-title-name">Soo Dhawoow &nbsp;✌🏾</h1>
+        </div>
+
         <h3 class="intro-phonetic-definition">[so-DaWo] &nbsp; Noun</h3>
         <h5 className="intro-definition-example">
           used to express a greeting to a guest or newcomer upon arrival

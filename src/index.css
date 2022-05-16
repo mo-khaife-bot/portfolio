@@ -61,9 +61,7 @@ strong {
 .intro {
   padding: 120px 100px;
   height: 100vh;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: space-around; */
+
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -95,13 +93,51 @@ strong {
   padding: 0;
 }
 
+.typed-container h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #008080; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typed-container {
+  display: inline-block;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #008080;
+  }
+}
+
+.intro-phonetic-definition {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #008080;
+}
 /* font-size change on screen size change */
 @media screen and (max-width: 1024px) {
   .intro-tagline {
     font-size: 2.25rem;
   }
   .intro-title-name {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -109,7 +145,7 @@ strong {
     font-size: 2rem;
   }
   .intro-title-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 550px) {
@@ -117,7 +153,14 @@ strong {
     font-size: 1.75rem;
   }
   .intro-title-name {
-    font-size: 2.75rem;
+    font-size: 2rem;
+  }
+
+  .intro-phonetic-definition {
+    font-size: 1.5rem;
+  }
+  .intro-definition-example {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -126,7 +169,11 @@ strong {
   }
 
   .intro-title-name {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+  }
+
+  .intro-definition-example {
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 330px) {
@@ -136,10 +183,6 @@ strong {
   }
 }
 
-.intro-phonetic-definition {
-  margin: 0;
-  font-size: 2rem;
-}
 .intro-definition-example {
   margin: 0;
   display: block;
@@ -157,10 +200,6 @@ strong {
   font-size: 1.25rem;
   font-weight: 400;
 }
-
-/* .intro-contact a {
-  margin-left: 30px;
-} */
 
 .social-link {
   height: 50px;
@@ -180,12 +219,6 @@ strong {
   margin: 0 5px;
   vertical-align: text-bottom;
 }
-/* @media screen and (max-width: 550px) {
-  .intro-contact {
-    width: 25px;
-    height: 25px;
-  }
-} */
 
 /* background */
 .section {
