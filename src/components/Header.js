@@ -1,5 +1,9 @@
 import React from "react";
 
+import { FaGithub } from "react-icons/fa";
+
+import { SiTwitter, SiLinkedin } from "react-icons/si";
+
 const Header = () => {
   return (
     <header className="intro">
@@ -15,14 +19,29 @@ const Header = () => {
         developer based in <span className="name">London</span> . I love
         creating beautiful interfaces, web apps, and everything in between!
       </h2>
-      <h3 className="intro-contact">
-        <span>Get in touch 👉🏼</span>{" "}
-        <span>
-          <a href="mailto:mokhaife.ali@gmail.com" className="highlight-link">
-            mokhaife.ali@gmail.com
-          </a>
-        </span>
-      </h3>
+      <div className="intro-contact">
+        <a
+          href="https://github.com/MuhammadAli-ai"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="social-link" />
+        </a>
+        <a
+          href="https://twitter.com/Khaife_Codes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiTwitter className="social-link" />
+        </a>
+        <a
+          href="https://twitter.com/Khaife_Codes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiLinkedin className="social-link" />
+        </a>
+      </div>
       {/* <div class="social-links">
         <a
           href="https://twitter.com/Khaife_Codes"
