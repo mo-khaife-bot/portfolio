@@ -221,6 +221,11 @@ strong {
 }
 
 /* background */
+
+.background {
+  background-color: #008080;
+  /* background: linear-gradient(176deg, #fff 70%, #008080 calc(70% + 2px)); */
+}
 .section {
   display: flex;
   justify-content: center;
@@ -246,7 +251,8 @@ strong {
     padding: 50px 35px;
   }
 }
-.section-title {
+.section-title,
+.section-title-background {
   flex-shrink: 0;
   width: 200px;
   margin-right: 70px;
@@ -257,55 +263,75 @@ strong {
   letter-spacing: 2px;
   font-size: 1.75rem;
 }
+
+.section-title-background {
+  color: #fff;
+}
 @media screen and (max-width: 1024px) {
-  .section-title {
+  .section-title,
+  .section-title-background {
     margin-right: 50px;
   }
 }
 @media screen and (max-width: 850px) {
-  .section-title {
+  .section-title,
+  .section-title-background {
     width: 150px;
   }
 }
 @media screen and (max-width: 768px) {
-  .section-title {
+  .section-title,
+  .section-title-background {
     text-align: left;
     width: auto;
   }
 }
-.section-content {
+
+.section-content-background {
+  color: #fff;
+}
+.section-content-background p strong {
+  color: #000;
+}
+.section-content,
+.section-content-background {
   font-weight: 300;
   font-size: 1.2rem;
   width: 100%;
   max-width: 650px;
 }
 @media screen and (max-width: 768px) {
-  .section-content {
+  .section-content,
+  .section-content-background {
     padding-top: 30px;
     padding-left: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  .section-content {
+  .section-content,
+  .section-content-background {
     padding-left: 30px;
   }
 }
-.section-content p {
+.section-content p,
+.section-content-background p {
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-.section-content .underline-link {
+.section-content .underline-link,
+.section-content-background .underline-link {
   position: relative;
   display: inline-block;
 }
-.section-content .underline-link:after {
+.section-content .underline-link:after,
+.section-content-background .underline-link:after {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 1px;
-  background: #36363c;
+  background: #000;
   content: "";
   opacity: 0;
   transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -313,7 +339,9 @@ strong {
 }
 
 .section-content .underline-link:focus:after,
-.section-content .underline-link:hover:after {
+.section-content .underline-link:hover:after,
+.section-content-background .underline-link:focus:after,
+.section-content-background .underline-link:hover:after {
   height: 2px;
   border-radius: 3px;
   opacity: 1;

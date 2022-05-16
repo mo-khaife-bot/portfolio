@@ -3,8 +3,8 @@ import React from "react";
 const Background = () => {
   return (
     <section className="section background">
-      <div className="section-title">BACKGROUND</div>
-      <div className="section-content">
+      <div className="section-title-background">BACKGROUND</div>
+      <div className="section-content-background">
         <p>
           I recently graduated from Queen Mary University of London after
           completing an{" "}
