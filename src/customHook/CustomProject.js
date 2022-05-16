@@ -38,7 +38,14 @@ const CustomProject = ({
         </div>
 
         <div className="img-overlay">
-          <img className="project-img" src={imgLink} alt="" />
+          <a
+            href={linkLive}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="demo-link-item"
+          >
+            <img className="project-img" src={imgLink} alt="" />
+          </a>
         </div>
       </div>
 
