@@ -68,12 +68,6 @@ strong {
   margin: 0 auto;
 }
 
-.intro-contact {
-  border: 1px solid black;
-}
-.intro-container {
-  border: 2px solid black;
-}
 @media screen and (max-width: 630px) {
   .intro {
     padding: 120px 70px;
