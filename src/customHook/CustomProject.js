@@ -4,7 +4,8 @@ const CustomProject = ({
   title,
   linkCode,
   linkLive,
-  imgLink,
+  imgDesktop,
+  imgMobile,
   desc,
   usedArray,
 }) => {
@@ -12,27 +13,28 @@ const CustomProject = ({
     <div className="project">
       <div className="project-name">
         <div className="project-header">
-          <h3 className="project-title">{title}</h3>
+          <h3 className="project-title">
+            {" "}
+            <a href={linkLive}>{title}</a>
+          </h3>
 
-          <div className="code-link">
+          <div className="project-links">
             <a
               href={linkCode}
               target="_blank"
               rel="noopener noreferrer"
               className="code-link-item"
             >
-              Github Code
+              Code
             </a>
-          </div>
 
-          <div className="demo-link">
             <a
               href={linkLive}
               target="_blank"
               rel="noopener noreferrer"
               className="demo-link-item"
             >
-              Live Demo
+              Website
             </a>
           </div>
         </div>
@@ -44,13 +46,16 @@ const CustomProject = ({
             rel="noopener noreferrer"
             className="demo-link-item"
           >
-            <img className="project-img" src={imgLink} alt="" />
+            <img className="project-img-desktop" src={imgDesktop} alt="" />
+            {imgMobile && (
+              <img className="project-img-mobile" src={imgMobile} alt="" />
+            )}
           </a>
         </div>
       </div>
 
       {/* make used buttons larger and font larger */}
-      <span className="project-description">{desc}</span>
+      <p className="project-description">{desc}</p>
       <div className="project-used">
         {usedArray.map((used, index) => {
           return (

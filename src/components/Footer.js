@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-copyright">
         <div className="top">
           <span>Created by </span>
@@ -22,7 +22,7 @@ const Footer = () => {
           <span className="text">email</span>
         </a>
         <a
-          href="https://github.com/MuhammadAli-ai"
+          href="https://github.com/mo-khaife-bot"
           title="github"
           target="_blank"
           rel="noopener noreferrer"

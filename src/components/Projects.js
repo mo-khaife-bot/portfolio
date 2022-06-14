@@ -1,36 +1,51 @@
 import React from "react";
 import CustomProject from "../customHook/CustomProject";
 
-import sportsImg from "../img/sportsbet-project-main.png";
+import SportsBetDesktopImg from "../img/sportsbet-desktop.png";
+import SportsBetMobileImg from "../img/sportsbet-mobile.png";
+import worldRankDesktopImg from "../img/worldRanksDesktop.gif";
 
 const Projects = () => {
   return (
     <>
-      <section className="section projects">
+      <section className="section projects" id="projects">
         <div className="section-title">Projects</div>
         <div className="section-content">
           <CustomProject
-            title="Sports-Book Betting Collection"
-            linkCode="https://github.com/MuhammadAli-ai/sports-odds-collection-demo"
+            title="Sports Odds"
+            linkCode="https://github.com/mo-khaife-bot/sports-odds-collection-demo"
             linkLive="https://sports-odds-collection-demonstration.netlify.app/"
-            imgLink={sportsImg}
-            desc="A web app that uses the Live Odds API from RapidAPI to show you sports odds for the Premier League, NBA, MLB NFL & NHL."
-            usedArray={["JavaScript", "React", "Bootstrap"]}
-          />
-          {/* <CustomProject
-            title="Instalike"
-            link="https://github.com/karantondare/instalike"
-            desc="Fullstack social media app to share your memories with CRUD functionality. You can create your posts and like other peoples people."
+            imgDesktop={SportsBetDesktopImg}
+            imgMobile={SportsBetMobileImg}
+            desc="A React app that uses the Live Odds API from RapidAPI to show the sports odds for Premier League, NBA, MLB NFL & NHL games. Styled using SASS & Bootstrap icons."
             usedArray={[
               "JavaScript",
               "React",
-              "Redux",
-              "Express",
-              "MongoDB",
-              "Material UI",
+              "SASS",
+              "Bootstrap",
+              "HTML",
+              "CSS",
+              "REST-API",
             ]}
           />
+          {/* <hr className="zig-zag"></hr> */}
+
           <CustomProject
+            title="World Ranks"
+            linkCode="https://github.com/mo-khaife-bot/nextjs-world-ranks"
+            linkLive="https://world-ranking-dashboard.netlify.app/"
+            imgDesktop={worldRankDesktopImg}
+            desc="A responsive Next.JS app that uses a REST API to filter/search specific countries/regions and rank countries by population and size, it also shows specific info about each country"
+            usedArray={[
+              "JavaScript",
+              "React",
+              "Next.JS",
+              "Material-UI",
+              "React-Leaflet",
+              "REST-API",
+            ]}
+          />
+          {/* <CustomProject
             title="Kitab Khana"
             link="https://github.com/karantondare/kitab-khana"
             desc="A full stack eCommerce website to purchase books with an admin panel to manage the orders and inventory."
@@ -56,16 +71,6 @@ const Projects = () => {
           /> */}
         </div>
       </section>
-      <div className=" section-content projects-flex">
-        <a
-          href="https://github.com/MuhammadAli-ai"
-          className=" underline-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h3>Check my other projects on github.</h3>
-        </a>
-      </div>
     </>
   );
 };

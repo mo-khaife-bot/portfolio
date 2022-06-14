@@ -5,11 +5,16 @@ import {
   FaHtml5,
   FaCss3,
   FaNpm,
-  FaNode,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
-import { SiPython, SiRedux, SiBootstrap, SiFlask } from "react-icons/si";
+import {
+  SiPython,
+  SiBootstrap,
+  SiSass,
+  SiVisualstudio,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -33,19 +38,19 @@ const Skills = () => {
         </div>
         <div className="icon-hover">
           {" "}
-          <FaReact className="icon-logo" />
+          <FaReact className="icon-logo " />
           <p className="icon-name">React</p>
         </div>
         <div className="icon-hover">
           {" "}
-          <SiRedux className="icon-logo" />
-          <p className="icon-name">Redux</p>
+          <SiSass className="icon-logo" />
+          <p className="icon-name">Sass</p>
         </div>
 
         <div className="icon-hover">
           {" "}
-          <FaNode className="icon-logo" />
-          <p className="icon-name">Node.JS</p>
+          <SiTailwindcss className="icon-logo" />
+          <p className="icon-name">TailWind</p>
         </div>
         <div className="icon-hover">
           {" "}
@@ -59,8 +64,8 @@ const Skills = () => {
         </div>
         <div className="icon-hover">
           {" "}
-          <SiFlask className="icon-logo" />
-          <p className="icon-name">Flask</p>
+          <SiVisualstudio className="icon-logo" />
+          <p className="icon-name">VS</p>
         </div>
         <div className="icon-hover">
           {" "}
