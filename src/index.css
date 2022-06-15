@@ -115,6 +115,7 @@ hr {
   position: sticky;
     top: 0;
   background-color: inherit;
+  /* have header above other things */
   z-index: 9;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--primary-color);
