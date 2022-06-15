@@ -6,33 +6,31 @@ const Background = () => {
       <div className="section-title-background">ABOUT</div>
       <div className="section-content-background">
         <p>
-          I love creating beautiful interfaces, web apps, and everything in
-          between!{" "}
-        </p>
-
-        <p>
           {" "}
           I recently completed an{" "}
           <a
             href="https://www.qmul.ac.uk/postgraduate/taught/coursefinder/courses/bioinformatics-msc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline-link"
+            className="uni-link"
           >
             MSc in Bioinformatics
           </a>{" "}
-          .
+          from Queen Mary University of London. Where I developed an interest in
+          Web Development.
         </p>
         <p>
-          My passion is combining my technical knowledge with my keen eye for
-          design to create a beautiful product. My goal is to always build
-          applications that are scalable and efficient under the hood while
-          providing engaging, pixel-perfect user experiences.
+          I love creating beautiful interfaces, web apps, and everything in
+          between! My passion is combining my technical knowledge with my keen
+          eye for design.
         </p>
-        <p>
-          <strong>When I'm not in front of a computer screen</strong>, I'm
-          probably jogging 🏃🏾, cooking something delicious 🧑🏾‍🍳 or supporting
-          Liverpool F.C. ⚽
+
+        <p className="hobbies">
+          When I'm not in front of a computer screen, I'm probably jogging{" "}
+          <span className="emoji">🏃🏾‍♂️</span>, cycling{" "}
+          <span className="emoji">🚴🏾</span>, attempting to cook something
+          delicious <span className="emoji">🧑🏾‍🍳 </span> or supporting Liverpool
+          F.C. <span className="emoji">⚽</span>
         </p>
       </div>
     </section>

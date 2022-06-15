@@ -44,7 +44,9 @@ const Header = () => {
           <span className="name">London</span>.
         </h2>
         <h3 className="intro-contact">
-          <span>Get in touch 👋🏾</span>
+          <span>
+            Get in touch <span className="emoji">👋🏾</span>
+          </span>
           <span>
             <a href="mailto:mokhaife.ali@gmail.com" className="highlight-link">
               mokhaife.ali@gmail.com
