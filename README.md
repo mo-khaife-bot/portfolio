@@ -43,7 +43,6 @@ Below a GIF of the portfolio site on mobile view.
 - React Custom Hook
 - Grid
 - Flexbox
-- Netlify (hosting)
 
 <br>
 
