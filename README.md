@@ -9,6 +9,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+<br>
 
 ## Table of Contents
 
@@ -18,6 +19,9 @@
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
+<br>
+
+<br>
 
 ## Overview
 
@@ -30,7 +34,7 @@ Below a GIF of the portfolio site on mobile view.
 <br>
 ![screenshot](/src/img/portfolio-mobile.gif)
 
-## <br>
+<br>
 
 ## Built With
 
@@ -49,5 +53,6 @@ Below a GIF of the portfolio site on mobile view.
 - Practicing responsive layout design without any CSS Framework.
 - Desktop First CSS Design with Mobile capabilities.
 - Adding Dark / Light mode using React Context API.
+- Using Custom React Hooks.
 
 <br>
