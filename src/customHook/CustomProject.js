@@ -14,28 +14,30 @@ const CustomProject = ({
       <div className="project-name">
         <div className="project-header">
           <h3 className="project-title">
-            {" "}
             <a href={linkLive}>{title}</a>
           </h3>
 
           <div className="project-links">
-            <a
-              href={linkCode}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="code-link-item"
-            >
-              Code
-            </a>
-
-            <a
-              href={linkLive}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="demo-link-item"
-            >
-              Website
-            </a>
+            {linkCode && (
+              <a
+                href={linkCode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="code-link-item"
+              >
+                Code
+              </a>
+            )}
+            {linkLive && (
+              <a
+                href={linkLive}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="demo-link-item"
+              >
+                Website
+              </a>
+            )}
           </div>
         </div>
 

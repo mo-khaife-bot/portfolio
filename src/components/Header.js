@@ -7,7 +7,10 @@ const Header = () => {
     <>
       <header className="header" id="header">
         <div className="header__logo">
-          <span>MKA</span>
+          <span>
+            {" "}
+            <a href="#home">MKA</a>
+          </span>
         </div>
 
         <ThemeToggler />
@@ -33,7 +36,7 @@ const Header = () => {
         </nav>
       </header>
 
-      <main className="intro">
+      <main className="intro" id="home">
         <div className="intro-container">
           <h1 className="landing__heading">
             <div className="landing__heading--name">Mohomed Khaife Ali</div>

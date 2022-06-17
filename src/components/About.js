@@ -2,7 +2,7 @@ import React from "react";
 
 const Background = () => {
   return (
-    <section className="section background" id="about">
+    <section id="about" className="section background">
       <div className="section-title-background">ABOUT</div>
       <div className="section-content-background">
         <p>
@@ -26,11 +26,9 @@ const Background = () => {
         </p>
 
         <p className="hobbies">
-          When I'm not in front of a computer screen, I'm probably jogging{" "}
-          <span className="emoji">🏃🏾‍♂️</span>, cycling{" "}
-          <span className="emoji">🚴🏾</span>, attempting to cook something
-          delicious <span className="emoji">🧑🏾‍🍳 </span> or supporting Liverpool
-          F.C. <span className="emoji">⚽</span>
+          When I'm not in front of a computer screen, I'm probably jogging,
+          cycling, attempting to cook something delicious or supporting
+          Liverpool F.C.
         </p>
       </div>
     </section>
