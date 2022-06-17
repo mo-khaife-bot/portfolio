@@ -13,7 +13,7 @@
   --dark-text: #000;
   --light-text: #fff;
   --dark-shadow: text-shadow: -3px -3px #000;
-  --light-shadow: text-shadow: -3px -3px #fff;
+
 }
 
 html {
@@ -123,10 +123,6 @@ hr {
   z-index: 9;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--primary-color);
-
-}
-#dark #header {
-  text-shadow: var(--light-shadow);
 
 }
 
