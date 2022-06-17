@@ -16,7 +16,6 @@
 - [Overview](#overview)
 - [Built With](#built-with)
 - [What I learned](#what-i-learned)
-- [Contact](#contact)
 
 <!-- OVERVIEW -->
 <br>
