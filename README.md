@@ -5,7 +5,7 @@
     <a href="https://world-ranking-dashboard.netlify.app/">
       Live Site
     </a>
-  </h1>
+  </h2>
 </div>
 
 <!-- TABLE OF CONTENTS -->
