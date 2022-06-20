@@ -2,7 +2,7 @@
 
 <div align="center">
   <h2>
-    <a href="https://world-ranking-dashboard.netlify.app/">
+    <a href="https://mo-khaife-ali.netlify.app/">
       Live Site
     </a>
   </h2>
